@@ -1,0 +1,139 @@
+:root {
+  --brand-gold: #c9a66b;
+  --dark-text: #333;
+  --light-bg: #f8f5f0;
+  --medium-text: #555;
+  --border-radius: 8px;
+  --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  --smooth-transition: all 0.3s ease;
+}
+
+.owner-dashboard {
+  padding-top: 100px;
+  min-height: 100vh;
+  background-color: var(--light-bg);
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--dark-text);
+  font-size: 2.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background: white;
+  padding: 25px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  transition: var(--smooth-transition);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card h3 {
+  color: var(--medium-text);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stat-value {
+  color: var(--brand-gold);
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.top-products-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.top-products-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  color: var(--medium-text);
+}
+
+.top-products-list li:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  color: var(--dark-text);
+  font-size: 1.5rem;
+  margin: 40px 0 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.order-management-section {
+  background: white;
+  padding: 25px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .dashboard-stats {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .owner-dashboard {
+    padding-top: 90px;
+  }
+
+  .dashboard-header {
+    font-size: 1.8rem;
+  }
+
+  .stat-card {
+    padding: 20px;
+  }
+
+  .stat-value {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-header {
+    font-size: 1.5rem;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+}

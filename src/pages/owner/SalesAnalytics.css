@@ -1,0 +1,31 @@
+.sales-analytics-container {
+  background-color: #f9f6ef;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.sales-analytics-header {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sales-analytics-chart-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.sales-analytics-chart-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}

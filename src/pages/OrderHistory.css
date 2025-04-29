@@ -1,0 +1,54 @@
+.order-history-page {
+    padding-top: 100px;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.order-history-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.order-history-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.no-orders-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 50px;
+}
+
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .order-history-page {
+        padding-top: 90px;
+    }
+
+    .order-history-header {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .order-history-header {
+        font-size: 1.5rem;
+    }
+
+    .order-history-container {
+        padding: 15px;
+    }
+}
